@@ -1,7 +1,12 @@
 
-@use "./custom" as *;
+@use "./custom";
 
+@use './sections/header';
+@use './sections/sections';
+@use './sections/home';
+@use './sections/showcase';
 @use './sections/aboutus';
+@use './sections/clients';
 @use './sections/footer';
 
 
