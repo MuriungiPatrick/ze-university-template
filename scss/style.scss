@@ -1,0 +1,28 @@
+
+@import "abstract/custom-variables";
+@import "abstract/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/animations";
+
+@import "layouts/sections";
+@import "layouts/menu";
+@import "layouts/clients";
+@import "layouts/aboutus";
+@import "layouts/pricing";
+@import "layouts/home";
+@import "layouts/skills";
+@import "layouts/footer";
+
+
+
+//  START THE FONTAWESOME 
+
+@import "scss/fontawesome";
+@import "scss/regular";
+@import "scss/solid";
+@import "scss/brands";

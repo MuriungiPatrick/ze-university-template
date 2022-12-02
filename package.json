@@ -1,0 +1,27 @@
+{
+  "name": "advenchaz",
+  "version": "1.0.0",
+  "description": "advenchaz is a free template appropriate for adventures and expedition websites",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch sass:public/css"
+  },
+  "keywords": [
+    "Patrick-muriungi",
+    "adventures template",
+    "tours",
+    "gym",
+    "free template"
+  ],
+  "author": "Patrick Muriungi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.1",
+    "html-include-element": "^0.3.0"
+  },
+  "devDependencies": {
+    "@phtml/include": "^4.2.0",
+    "sass": "^1.56.1"
+  }
+}
