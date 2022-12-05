@@ -1,3 +1,62 @@
+.contact-top {
+  position: relative;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.navbar {
+  color: #fff;
+  background: #7235d4;
+  padding: 1.2rem 0 !important;
+}
+.navbar li {
+  padding: 0 0.6rem;
+  color: #fff;
+}
+.navbar li a {
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-transform: capitalize;
+  animation: moveInBottom 0.5s ease-out 0.5s;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 600;
+  color: #fff !important;
+}
+.navbar li a:hover {
+  color: #0F054A;
+}
+
+.navigation-tabs {
+  text-transform: capitalize;
+  text-align: center;
+}
+.navigation-tabs:link, .navigation-tabs:visited, .navigation-tabs:active {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.hero {
+  position: relative;
+  background: url(/public/images/zeuni-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 5rem 0;
+}
+
+.introduction {
+  background: rgba(114, 53, 212, 0.8);
+  margin-top: 15rem;
+}
+
 /*-----------------------------------------------------------------------------
                   THE HOME PAGE SECTION [Including Nav and Menu section ]               
 -----------------------------------------------------------------------------------
@@ -5,7 +64,7 @@
 .header {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #19b177, #dc3545), url("/images/bg/muriungi.dev-homepage-intro.svg");
+  background: linear-gradient(to right, #7235d4, #dc3545), url("/images/bg/muriungi.dev-homepage-intro.svg");
   background-size: cover;
   background-position: center;
   padding: 2rem 0 2rem 0;
@@ -26,7 +85,7 @@
 }
 
 .section-1 {
-  background: linear-gradient(to right, rgba(25, 177, 119, 0.9), rgba(25, 177, 119, 0.9)), url("/images/about-2.jpg");
+  background: linear-gradient(to right, rgba(114, 53, 212, 0.9), rgba(114, 53, 212, 0.9)), url("/images/about-2.jpg");
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -72,18 +131,17 @@
   transition: all 0.3s;
 }
 .navbar:link, .navbar:visited, .navbar:active {
-  color: #19b177;
+  color: #7235d4;
   text-decoration: none;
   transition: all 0.3s;
 }
 
 .section-1 {
-  background: linear-gradient(to right, rgba(25, 177, 119, 0.9), rgba(25, 177, 119, 0.9)), url("/images/about-2.jpg");
+  background-color: none;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: top top;
-  padding-top: 8rem;
 }
 
 .section-2 {
@@ -233,7 +291,7 @@
 .showcase-wrapper img:hover {
   transform: scale(1.05);
   transition: all 0.3s;
-  outline-offset: 1.5rem solid #19b177;
+  outline-offset: 1.5rem solid #7235d4;
 }
 
 .showcase-about {
@@ -243,7 +301,7 @@
 
 .showcase-icon {
   font-size: 3rem;
-  color: #19b177;
+  color: #7235d4;
   padding-left: 0.8rem;
 }
 
@@ -256,6 +314,55 @@
                             THE ABOUT PAGE SECTION
 ---------------------------------------------------------------------------------------------
 **/
+.intro {
+  position: relative;
+  height: 19rem;
+  background-color: #ced4da;
+  overflow-y: hidden;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.intro h3 {
+  margin: 0;
+  display: block;
+  background-color: #7235d4;
+  padding: 1rem;
+}
+.intro a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.intro a:hover ~ .intro__overlay, .intro a:focus ~ .intro__overlay {
+  transform: translate3d(0, 0, 0);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.intro__overlay {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transition: transform 300ms;
+  background-color: rgba(114, 53, 212, 0.5);
+  transform: translate3d(0, calc(100% - 3.5rem), 0);
+}
+
+.intro__body {
+  padding: 1rem;
+}
+.intro__body p {
+  margin: 0;
+}
+
 .about-section {
   height: 100%;
 }
@@ -288,13 +395,13 @@
 }
 .about .icon-boxes .icon-box i {
   font-size: 2.5rem;
-  color: #19b177;
+  color: #7235d4;
 }
 
 .client {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(25, 177, 119, 0.8), rgba(25, 177, 119, 0.8)), url(/public/images/bg-6.jpg);
+  background: linear-gradient(rgba(114, 53, 212, 0.8), rgba(114, 53, 212, 0.8)), url(/public/images/bg-6.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -318,12 +425,12 @@
   font-weight: 500;
 }
 .client .t-card .client-img {
-  justify-content: center;
+  text-align: center;
 }
 .client .t-card .client-img img {
   width: 80px;
   height: 80px;
-  border: 3px solid #19b177;
+  border: 3px solid #7235d4;
 }
 
 .carousel-icon i {
@@ -389,10 +496,10 @@
   text-decoration: none;
 }
 .footer .footer-center a:hover {
-  color: #19b177;
+  color: #7235d4;
 }
 .footer .footer-sm a {
-  color: #19b177;
+  color: #7235d4;
 }
 .footer .footer-sm a i {
   font-size: 1.5rem;
@@ -417,7 +524,7 @@
 }
 .f-list > li a:hover {
   padding-bottom: 4rem;
-  color: #19b177;
+  color: #7235d4;
   transform: skewY(10deg) skewX(5deg) scale(1.1);
   transition: all 0.3s;
 }
@@ -430,7 +537,7 @@
   color: #ced4da;
 }
 .footer-bottom__copyright a {
-  color: #19b177;
+  color: #7235d4;
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -440,21 +547,21 @@
 }
 
 .phone {
-  stroke: #19b177;
+  stroke: #7235d4;
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   animation: line-Animate 3s ease forwards;
 }
 
 .email {
-  stroke: #19b177;
+  stroke: #7235d4;
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   animation: line-Animate 3s ease forwards;
 }
 
 .location {
-  stroke: #19b177;
+  stroke: #7235d4;
   stroke-dasharray: 205;
   stroke-dashoffset: 205;
   animation: line-Animate 3s ease forwards;

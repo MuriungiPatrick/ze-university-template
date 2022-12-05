@@ -1,6 +1,8 @@
 
 @use "./custom";
 
+@use './sections/menu';
+@use './sections/hero-section';
 @use './sections/header';
 @use './sections/sections';
 @use './sections/home';
