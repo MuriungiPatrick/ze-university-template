@@ -1,6 +1,27 @@
+.listinfo {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.listinfo__list {
+  position: relative;
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.listinfo__list li::before {
+  font-family: "bootstrap-icons";
+  content: "\f271";
+  margin-right: 0.5rem;
+}
+
 .contact-top {
   position: relative;
-  background-color: #fff;
+  background-color: #e9ecef;
+}
+.contact-top i {
+  color: #7235d4;
+  font-weight: 600;
 }
 
 .navbar-brand {
@@ -54,7 +75,12 @@
 
 .introduction {
   background: rgba(114, 53, 212, 0.8);
-  margin-top: 15rem;
+  margin-top: 10rem;
+}
+@media (min-width: 768px) {
+  .introduction {
+    margin-top: 15rem;
+  }
 }
 
 /*-----------------------------------------------------------------------------
@@ -545,26 +571,23 @@ img {
   color: #fff;
   text-decoration: underline;
 }
-
-.phone {
-  stroke: #7235d4;
-  stroke-dasharray: 141;
-  stroke-dashoffset: 141;
-  animation: line-Animate 3s ease forwards;
+.footer-bottom__legalstuff {
+  padding-top: 1rem;
+  text-align: center;
 }
-
-.email {
-  stroke: #7235d4;
-  stroke-dasharray: 141;
-  stroke-dashoffset: 141;
-  animation: line-Animate 3s ease forwards;
+@media (min-width: 768px) {
+  .footer-bottom__legalstuff {
+    text-align: end;
+  }
 }
-
-.location {
-  stroke: #7235d4;
-  stroke-dasharray: 205;
-  stroke-dashoffset: 205;
-  animation: line-Animate 3s ease forwards;
+.footer-bottom__legalstuff a {
+  color: #7235d4;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.footer-bottom__legalstuff a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
