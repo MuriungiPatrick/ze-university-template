@@ -2,6 +2,8 @@
 
 ###### Release ```Dec-07, 2022.```
 
+## [Live Preview](https://muriungipatrick.github.io/ze-university)
+
 Ze-University is a free Responsive, clean and modern template supremely crafted for University, Colleges, and institutions of higher learning website.
 
 It’s built on the Bootstrap 5.2 framework. it is a one page template comprising of all the latest features with a template compatible with all modern browsers and devices With a clean design, this fitness template is ready to impress your audience.
